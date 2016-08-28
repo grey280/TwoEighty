@@ -10,6 +10,7 @@
 			background-color:#eeeeec;
 			color:#2e3436;
 			margin:0;
+			font-family: Open Sans;
 		}
 		section#sites{
 			background-color:;
@@ -28,6 +29,7 @@
 		header p{
 			margin-top:2px;
 		}
+
 		section h1{
 			margin-top:0;
 			margin-bottom:5px;
@@ -42,6 +44,7 @@
 			border-style:solid;
 			border-color:#2e3436;
 		}
+
 		section a:hover{
 			border-color:#888a85;
 		}
@@ -52,23 +55,10 @@
 		a:hover{
 			background-color:#babdb6;
 		}
-		body{
-			font-family: Open Sans;
-		}
 		h1{
 			font-family: Raleway;
 		}
-		.site-avatar{
-			display: block;
-			float: left;
-			margin-right: .75em;
-			height: 96px;
-			width: 96px;
-			border-radius: 50%;
-			background-position: 50%;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
+		
 		@media only screen and (min-width:481px){
 			section{
 				min-width:200px;
@@ -119,7 +109,20 @@
 </header>
 
 <section id="sites">
-	<a href="http://grey280.net">
+	<div class="card">
+		<img src="http://cdn.twoeighty.net/static/grey280.png" alt="Grey280 image">
+		<h1>Grey</h1>
+		<p>Computer science and music - a bit of an odd combo, but it works.</p>
+		<div class="card-links">
+			<a href="http://grey280.net">Blog</a>
+			<a href="http://github.com/grey280" class="github" title="Github">Github</a>
+			<a href="http://instagram.com/greytwoeighty" class="instagram" title="Instagram">Instagram</a>
+		</div>
+		
+	</div>
+	
+
+	<!-- <a href="http://grey280.net">
 		<div id="grey280-site-avatar" class="site-avatar" style="background-image: url('http://cdn.twoeighty.net/static/grey280.png')"></div>
 		<h1>Grey280</h1>
 		<p>Technology, sarcasm, and the occasional book review. A day in the life of a comp-sci/music double-major.</p>
@@ -139,7 +142,7 @@
 		<div id="loganmays-site-avatar" class="site-avatar" style="background-image: url('http://cdn.twoeighty.net/static/loganmays.png')"></div>
 		<h1>Logan Mays</h1>
 		<p>Singer-songwriter and composer: whether you want your music as an MP3 or written on the page, he's your guy.</p>
-	</a>
+	</a> -->
 </section>
 
 <noscript>
