@@ -38,10 +38,9 @@
 			margin-bottom:5px;
 		}
 		section a{
-			display:inline-block;
-			border-width:1px;
+		/*	border-width:1px;
 			border-style:solid;
-			border-color:#2e3436;
+			border-color:#2e3436;*/
 		}
 
 		section a:hover{
@@ -55,8 +54,31 @@
 			background-color:#babdb6;
 		}
 
+		div.card{
+			width:300px;
+			padding:0px;
+			border:solid #2e3436 1px;
+			border-radius:5px;
+		}
+		div.card-inner{
+			padding:10px;
+		}
+		.card img{
+			border-radius:5px 5px 0px 0px;
+		}
 		div.card-links{
 			display:flex;
+			width:100%;
+			border-radius:0px 0px 5px 5px;
+			overflow:hidden;
+
+			border-width:0px;
+			border-top-width:1px;
+			border-style:solid;
+			border-color:#2e3436;
+		}
+		.card-links a{
+			padding:5px;
 		}
 		
 		@media only screen and (min-width:481px){
@@ -65,24 +87,24 @@
 				max-width:80%;
 				margin:10px 10%;
 			}
-			section a{
+			/*section a{
 				padding: 15px;
 				width:calc(100% - 30px);
 				margin-bottom:5px;
 				border-radius:5px;
-			}
+			}*/
 		}
 		@media only screen and (max-width: 480px){
 			section{
 				width:100%;
 				margin:10px 0;
 			}
-			section a{
+			/*section a{
 				width:100%;
 				padding:0px;
 				margin: 10px 0px;
 				border-radius:0px;
-			}
+			}*/
 		}
 	</style>
 	<!-- Piwik -->
@@ -111,15 +133,49 @@
 <section id="sites">
 	<div class="card">
 		<img src="http://cdn.twoeighty.net/static/grey280.png" alt="Grey280 image">
-		<h1>Grey</h1>
-		<p>Computer science and music - a bit of an odd combo, but it works.</p>
+		<div class="card-inner">
+			<h1>Grey</h1>
+			<p>Computer science and music - a bit of an odd combo, but it works.</p>
+		</div>
 		<div class="card-links">
 			<a href="http://grey280.net">Blog</a>
-			<a href="http://github.com/grey280" class="github" title="Github">Github</a>
+			<a href="http://github.com/grey280" class="github" title="GitHub">GitHub</a>
 			<a href="http://instagram.com/greytwoeighty" class="instagram" title="Instagram">Instagram</a>
 			<a href="mailto:grey@twoeighty.net" class="email" title="Email">Email</a>
 		</div>
-		
+	</div>
+
+	<div class="card">
+		<img src="http://cdn.twoeighty.net/static/chasestowell.png" alt="Chase image">
+		<div class="card-inner">
+			<h1>Chase</h1>
+			<p>A bespoke blend of photography and politics.</p>
+		</div>
+		<div class="card-links">
+
+		</div>
+	</div>
+
+	<div class="card">
+		<img src="" alt=" image">
+		<div class="card-inner">
+			<h1></h1>
+			<p></p>
+		</div>
+		<div class="card-links">
+
+		</div>
+	</div>
+
+	<div class="card">
+		<img src="" alt=" image">
+		<div class="card-inner">
+			<h1></h1>
+			<p></p>
+		</div>
+		<div class="card-links">
+
+		</div>
 	</div>
 	
 
