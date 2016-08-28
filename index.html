@@ -53,36 +53,31 @@
 
 		div.card{
 			background-color:#fff;
-
 			display:flex;
 			flex-direction:column;
 			width:300px;
 			padding:0px;
-			border:solid #2e3436 1px;
 			border-radius:5px;
 			margin:auto;
 			margin-bottom:10px;
 		}
 		div.card-inner{
 			padding:10px;
+			border:solid #2e3436 1px;
+			border-width:0px 1px 0px 1px;
 		}
 		.card img{
 			border-radius:5px 5px 0px 0px;
-			/*max-width:300px;*/
 			width:100%;
 		}
 		div.card-links{
 			display:flex;
 			flex-wrap:wrap;
 			margin-top:auto;
-			width:100%;
+			width:calc(100%-2px);
 			border-radius:0px 0px 5px 5px;
 			overflow:hidden;
-
-			border-width:0px;
-			border-top-width:1px;
-			border-style:solid;
-			border-color:#2e3436;
+			border:solid #2e2326 1px;
 		}
 		.card-links a{
 			padding:5px;
