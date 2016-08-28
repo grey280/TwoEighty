@@ -52,13 +52,15 @@
 		}
 
 		div.card{
+			background-color:#fff;
+
 			display:flex;
 			flex-direction:column;
 			width:300px;
 			padding:0px;
 			border:solid #2e3436 1px;
 			border-radius:5px;
-			margin-right:auto;
+			margin:auto;
 			margin-bottom:10px;
 		}
 		div.card-inner{
@@ -66,7 +68,8 @@
 		}
 		.card img{
 			border-radius:5px 5px 0px 0px;
-			max-width:300px;
+			/*max-width:300px;*/
+			width:100%;
 		}
 		div.card-links{
 			display:flex;
@@ -84,35 +87,6 @@
 		.card-links a{
 			padding:5px;
 			flex-grow:1;
-		}
-		.card-links a:last-of-type{
-			flex-grow:1;
-		}
-		
-		@media only screen and (min-width:481px){
-			section{
-				min-width:200px;
-				max-width:80%;
-				margin:10px 10%;
-			}
-			/*section a{
-				padding: 15px;
-				width:calc(100% - 30px);
-				margin-bottom:5px;
-				border-radius:5px;
-			}*/
-		}
-		@media only screen and (max-width: 480px){
-			section{
-				width:100%;
-				margin:10px 0;
-			}
-			/*section a{
-				width:100%;
-				padding:0px;
-				margin: 10px 0px;
-				border-radius:0px;
-			}*/
 		}
 	</style>
 	<!-- Piwik -->
@@ -176,7 +150,6 @@
 			<a href="https://www.instagram.com/sanderphotography">Instagram</a>
 			<a href="https://www.facebook.com/sanderphotography">Facebook</a>
 			<a href="mailto:john@jsanderphotography.com">Email</a>
-			<a>Additional item?</a>
 		</div>
 	</div>
 
