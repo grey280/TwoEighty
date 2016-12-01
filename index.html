@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		html, body{
-			background-color:#eeeeec;
+			background-color:#fff;
 			color:#2e3436;
 			margin:0;
 			font-family: Avenir, "Helvetica Neue", Helvetica, Roboto, Corbel, sans-serif;
@@ -49,7 +49,6 @@
 		}
 
 		.card{
-			background-color:#fff;
 			display:flex;
 			flex-direction:column;
 			width:300px;
@@ -58,6 +57,7 @@
 			margin:auto;
 			margin-bottom:10px;
 		}
+
 		div.card-inner{
 			padding:10px;
 			border:solid #2e3436 1px;
@@ -74,13 +74,75 @@
 			width:calc(100% - 2px);
 			border-radius:0px 0px 5px 5px;
 			overflow:hidden;
-			border:solid #2e2326 1px;
+			border:solid #2e3436 1px;
 		}
 		.card-links a{
 			padding:5px;
 			flex-grow:1;
 			text-decoration:underline;
 		}
+
+		/* Color schemes! */
+		/* Logan */
+			.card.logan{
+				background-color:#eeeeec;
+				color:#2e3436;
+			}
+			.logan .card-inner, .logan .card-links{
+				border-color:#730237;
+			}
+			.logan .card-links a{
+				color:#416CA6;
+			}
+			.logan a:hover{
+				background-color:#D9C1D2;
+				color:#730237;
+			}
+		/* John */
+			.card.john{
+				background-color:#D9D9D9;
+				color:#0D0000;
+			}
+			.john .card-inner, .john .card-links{
+				border-color:#260101;
+			}
+			.john .card-links a{
+				color:#735755;
+			}
+			.john a:hover{
+				color:#260101;
+				background-color:#A69492;
+			}
+		/* Chase */
+			.card.chase{
+				background-color:#F0EAE9;
+				color:#323F59;
+			}
+			.chase .card-inner, .chase .card-links{
+				border-color:#0D0D0D;
+			}
+			.chase .card-links a{
+				color:#323F59;
+			}
+			.chase a:hover{
+				background-color:#BF99A0;
+			}
+		/* Grey */
+			.card.grey{
+				background-color:#DFE9F2;
+				color:#59522E;
+			}
+			.grey .card-inner, .grey .card-links{
+				border-color:#59522E;
+			}
+			.grey .card-links a{
+				color:#A63348;
+			}
+			.grey a:hover{
+				color:#2e3436;
+				background-color:#86A656;
+			}
+
 	</style>
 
 	<!-- Piwik -->
@@ -107,7 +169,7 @@
 </header>
 
 <section id="sites">
-	<div class="card">
+	<div class="card grey">
 		<img src="http://cdn.twoeighty.net/static/grey280.jpg" alt="Grey280 image">
 		<div class="card-inner">
 			<h1>Grey</h1>
@@ -120,7 +182,7 @@
 			<a href="mailto:grey@twoeighty.net">Email</a>
 		</div>
 	</div>
-	<div class="card">
+	<div class="card chase">
 		<img src="http://cdn.twoeighty.net/static/chasestowell.png" alt="Chase image">
 		<div class="card-inner">
 			<h1>Chase</h1>
@@ -131,7 +193,7 @@
 			<a href="https://www.instagram.com/chase.stowell/">Instagram</a>
 		</div>
 	</div>
-	<div class="card">
+	<div class="card john">
 		<img src="http://cdn.twoeighty.net/static/jsanderphotography.jpg" alt="John image">
 		<div class="card-inner">
 			<h1>John</h1>
@@ -144,7 +206,7 @@
 			<a href="mailto:john@jsanderphotography.com">Email</a>
 		</div>
 	</div>
-	<div class="card">
+	<div class="card logan">
 		<img src="http://cdn.twoeighty.net/static/loganmays.png" alt="Logan image">
 		<div class="card-inner">
 			<h1>Logan</h1>
