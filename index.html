@@ -4,6 +4,7 @@
 	<!-- Updated 2016-08-28 -->
 	<title>TwoEighty</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<style type="text/css">
 		html, body{
 			background-color:#fff;
@@ -44,6 +45,11 @@
 			margin-bottom:5px;
 		}
 
+		h2{
+			padding-left:30px;
+			margin:0;
+		}
+
 		a:link, a:visited{
 			color:#2e3436;
 			text-decoration: none;
@@ -55,10 +61,10 @@
 		.card{
 			display:flex;
 			flex-direction:column;
-			width:300px;
+			width:275px;
 			padding:0px;
 			border-radius:5px;
-			margin:auto;
+			margin-right:auto;
 			margin-bottom:10px;
 		}
 
@@ -131,6 +137,21 @@
 				color:#2e3436;
 				background-color:#89D9D9;
 			}
+		/* Fluidics */
+		/* 	backBlue: #008CD1;
+			darkBlue: #3465A4;
+			darkerBlue: #204A87;
+			lightBlue: #6ABCE2;*/
+			.card.fluidics{
+				background-color:#3465A4;
+				color:#EEEEEC;
+			}
+			.fluidics .card-links a{
+				color:#EEEEEC;
+			}
+			.fluidics a:hover{
+				background-color:#204a87;
+			}
 		/* Grey */
 			.card.grey{
 				background-color:#DFE9F2;
@@ -145,7 +166,6 @@
 			}
 
 	</style>
-
 	<!-- Piwik -->
 	<script type="text/javascript">
 	  var _paq = _paq || [];
@@ -169,8 +189,8 @@
 	<p>Making things is more fun with friends.</p>
 </header>
 
-<h1>People</h1>
-<section class="cards">
+<h2>People</h2>
+<section class="cards" id="people">
 	<div class="card grey">
 		<img src="http://cdn.twoeighty.net/static/grey280.jpg" alt="Grey280 image">
 		<div class="card-inner">
@@ -192,7 +212,7 @@
 			<p>Photos that capture the emphasis of life.</p>
 		</div>
 		<div class="card-links">
-			<a href="https://jsanderphotography.com">Website</a>
+			<a href="https://jsanderphotography.com">Blog</a>
 			<a href="https://www.instagram.com/sanderphotography">Instagram</a>
 			<a href="https://www.facebook.com/sanderphotography">Facebook</a>
 			<a href="mailto:john@jsanderphotography.com">Email</a>
@@ -221,13 +241,13 @@
 	</div>
 </section>
 
-
-<section class="cards">
+<h2>Projects</h2>
+<section class="cards" id="projects">
 	<div class="card fluidics">
 		<img src="http://cdn.twoeighty.net/static/fluidics.png" alt="Fluidics logo">
 		<div class="card-inner">
 			<h1>Fluidics</h1>
-			<p>Drink more water. Be more healthy.</p>
+			<p>Drink more water. Be more healthy.<br>Simple, easy iOS water tracking.</p>
 		</div>
 		<div class="card-links">
 			<a href="#">App Store</a>
@@ -241,12 +261,14 @@
 			<p>Linfield College's student-run a&nbsp;cappella group.</p>
 		</div>
 		<div class="card-links">
-			<a href="http://notyourforte.com">Website</a>
+			<a href="http://notyourforte.com">Blog</a>
 			<a href="https://www.instagram.com/notyourforte_/">Instagram</a>
 			<a href="https://www.facebook.com/notyourforte/">Facebook</a>
 			<a href="https://twitter.com/NotYourForte_">Twitter</a>
 		</div>
 	</div>
+	<div class="card"></div>
+	<div class="card"></div>
 </section>
 
 <noscript>
