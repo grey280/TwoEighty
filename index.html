@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Updated 2016-08-28 -->
+	<!-- Updated 2017-12-31 -->
 	<title>TwoEighty</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<style type="text/css">
 		html, body{
 			background-color:#fff;
@@ -11,7 +12,7 @@
 			margin:0;
 			font-family: Avenir, "Helvetica Neue", Helvetica, Roboto, Corbel, sans-serif;
 		}
-		section#sites{
+		section.cards{
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:flex-start;
@@ -44,6 +45,11 @@
 			margin-bottom:5px;
 		}
 
+		h2{
+			padding-left:30px;
+			margin:0;
+		}
+
 		a:link, a:visited{
 			color:#2e3436;
 			text-decoration: none;
@@ -55,15 +61,16 @@
 		.card{
 			display:flex;
 			flex-direction:column;
-			width:300px;
+			width:275px;
 			padding:0px;
 			border-radius:5px;
-			margin:auto;
+			margin-right:auto;
 			margin-bottom:10px;
 		}
 
 		div.card-inner{
 			padding:10px;
+			padding-top:0;
 		}
 		.card img{
 			border-radius:5px 5px 0px 0px;
@@ -85,67 +92,76 @@
 
 		/* Color schemes! */
 		/* Logan */
-			.card.logan{
-				background-color:#eeeeec;
-				color:#2e3436;
+			#logan{
+				background-color:#660224;
+				color:#EEEEEC;
 			}
-			.logan .card-links a{
-				color:#416CA6;
+			#logan .card-links a{
+				color:#EEEEEC;
 			}
-			.logan a:hover{
-				background-color:#D9C1D2;
-				color:#730237;
+			#logan a:hover{
+				background-color:#6A97D8;
+				color:#2E3436;
 			}
 		/* John */
-			.card.john{
-				background-color:#D9D9D9;
-				color:#0D0000;
+			#john{
+				background-color:#2D2B33;
+				color:#EEEEEC;
 			}
-			.john .card-links a{
-				color:#735755;
+			#john .card-links a{
+				color:#EEEEEC;
 			}
-			.john a:hover{
-				color:#260101;
-				background-color:#A69492;
+			#john a:hover{
+				background-color:#676678;
+				color:#99A3C7;
 			}
 		/* Chase */
-			.card.chase{
-				background-color:#F0EAE9;
-				color:#323F59;
+			#chase{
+				background-color:#A27741;
+				color:#EEEEEC;
 			}
-			.chase .card-links a{
-				color:#323F59;
+
+			#chase .card-links a{
+				color:#EEEEEC;
 			}
-			.chase a:hover{
-				background-color:#BF99A0;
+			#chase a:hover{
+				background-color:#835154;
 			}
 		/* NYF */
-			.card.nyf{
-				background-color:#F2F2F2;
-				color:#2e3436;
+			#nyf{
+				background-color:#6ABCE2;
+				color:#EEEEEC;
 			}
-			.nyf .card-links a{
-				color:#9cc1d9;
+			#nyf .card-links a{
+				color:#EEEEEC;
 			}
-			.nyf a:hover{
-				color:#2e3436;
+			#nyf a:hover{
 				background-color:#89D9D9;
 			}
+		/* Fluidics */
+			#fluidics{
+				background-color:#3465A4;
+				color:#EEEEEC;
+			}
+			#fluidics .card-links a{
+				color:#EEEEEC;
+			}
+			#fluidics a:hover{
+				background-color:#204a87;
+			}
 		/* Grey */
-			.card.grey{
-				background-color:#DFE9F2;
-				color:#59522E;
+			#grey{
+				background-color:#1E1A1E;
+				color:#EEEEEC;
 			}
-			.grey .card-links a{
-				color:#A63348;
+			#grey .card-links a{
+				color:#EEEEEC;
 			}
-			.grey a:hover{
-				color:#2e3436;
-				background-color:#86A656;
+			#grey a:hover{
+				background-color:#222222;
+				color:#FCB53F;
 			}
-
 	</style>
-
 	<!-- Piwik -->
 	<script type="text/javascript">
 	  var _paq = _paq || [];
@@ -169,12 +185,13 @@
 	<p>Making things is more fun with friends.</p>
 </header>
 
-<section id="sites">
-	<div class="card grey">
-		<img src="http://cdn.twoeighty.net/static/grey280.jpg" alt="Grey280 image">
+<h2>People</h2>
+<section class="cards" id="people">
+	<div class="card" id="grey">
+		<img src="http://cdn.twoeighty.net/static/Grey.png" alt="Grey photo">
 		<div class="card-inner">
 			<h1>Grey</h1>
-			<p>Computer science and music - a bit of an odd combo, but it works.</p>
+			<p>Computer science and music&nbsp;&mdash;&nbsp;a bit of an odd combo, but it works.</p>
 		</div>
 		<div class="card-links">
 			<a href="https://grey280.net">Blog</a>
@@ -183,45 +200,32 @@
 			<a href="mailto:grey@twoeighty.net">Email</a>
 		</div>
 	</div>
-	<div class="card nyf">
-		<img src="http://cdn.twoeighty.net/static/NYF.jpg" alt-"Not Your Forte logo">
-		<div class="card-inner">
-			<h1>Not Your Forte</h1>
-			<p>Linfield College's student-run a&nbsp;cappella group.</p>
-		</div>
-		<div class="card-links">
-			<a href="http://notyourforte.com">Website</a>
-			<a href="https://www.instagram.com/notyourforte_/">Instagram</a>
-			<a href="https://www.facebook.com/notyourforte/">Facebook</a>
-			<a href="https://twitter.com/NotYourForte_">Twitter</a>
-		</div>
-	</div>
-	<div class="card john">
-		<img src="http://cdn.twoeighty.net/static/jsanderphotography.jpg" alt="John image">
+	
+	<div class="card" id="john">
+		<img src="http://cdn.twoeighty.net/static/John.png" alt="John photo">
 		<div class="card-inner">
 			<h1>John</h1>
 			<p>Photos that capture the emphasis of life.</p>
 		</div>
 		<div class="card-links">
-			<a href="https://jsanderphotography.com">Website</a>
+			<a href="https://jsanderphotography.com">Blog</a>
 			<a href="https://www.instagram.com/sanderphotography">Instagram</a>
 			<a href="https://www.facebook.com/sanderphotography">Facebook</a>
 			<a href="mailto:john@jsanderphotography.com">Email</a>
 		</div>
 	</div>
-	<div class="card chase">
-		<img src="http://cdn.twoeighty.net/static/chasestowell.png" alt="Chase image">
+	<div class="card" id="chase">
+		<img src="http://cdn.twoeighty.net/static/Chase.png" alt="Chase photo">
 		<div class="card-inner">
 			<h1>Chase</h1>
-			<p>A bespoke blend of photography and politics.</p>
+			<p>A camera and the great outdoors. What more could you want?</p>
 		</div>
 		<div class="card-links">
-			<a href="https://chasestowell.twoeighty.net">Blog</a>
 			<a href="https://www.instagram.com/chase.stowell/">Instagram</a>
 		</div>
 	</div>
-	<div class="card logan">
-		<img src="http://cdn.twoeighty.net/static/loganmays.png" alt="Logan image">
+	<div class="card" id="logan">
+		<img src="http://cdn.twoeighty.net/static/Logan.png" alt="Logan photo">
 		<div class="card-inner">
 			<h1>Logan</h1>
 			<p>Singer-songwriter and composer; music on paper or in your ears.</p>
@@ -230,6 +234,36 @@
 			<a href="https://logan-mays.com">Website</a>
 		</div>
 	</div>
+</section>
+
+<h2>Projects</h2>
+<section class="cards" id="projects">
+	<div class="card" id="fluidics">
+		<img src="http://cdn.twoeighty.net/static/fluidics.png" alt="Fluidics logo">
+		<div class="card-inner">
+			<h1>Fluidics</h1>
+			<p>Drink more water. Be more healthy.<br>Simple, easy iOS water tracking.</p>
+		</div>
+		<div class="card-links">
+			<a href="#">App Store</a>
+			<a href="http://fluidicsapp.com">Learn More</a>
+		</div>
+	</div>
+	<div class="card" id="nyf">
+		<img src="http://cdn.twoeighty.net/static/NYF2.png" alt="Not Your Forte logo">
+		<div class="card-inner">
+			<h1>Not Your Forte</h1>
+			<p>Linfield College's student-run a&nbsp;cappella group.</p>
+		</div>
+		<div class="card-links">
+			<a href="http://notyourforte.com">Blog</a>
+			<a href="https://www.instagram.com/notyourforte_/">Instagram</a>
+			<a href="https://www.facebook.com/notyourforte/">Facebook</a>
+			<a href="https://twitter.com/NotYourForte_">Twitter</a>
+		</div>
+	</div>
+	<div class="card"></div><!-- Filler cards, used to keep the spacing even. Hopefully to be replaced with more actual projects one day. -->
+	<div class="card"></div>
 </section>
 
 <noscript>
